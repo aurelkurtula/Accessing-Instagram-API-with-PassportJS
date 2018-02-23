@@ -1,0 +1,17 @@
+doctype html 
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/style.css')
+    meta(name='viewport' content='windth=device-width, initial-scale=1')
+body 
+  .wrap 
+    img.cover(src=images[1].standard_resolution.url)
+    .content
+      h1=name
+      a(href=homePage) website
+      p=bio
+      each image, i in images
+        img.shots(src=image.thumbnail.url)
+        
+      a(href='/logout') Logout

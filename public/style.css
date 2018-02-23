@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*base sizee*/
+body {
+  font-size: 1.4rem;
+  background: url("https://images.unsplash.com/photo-1516659336300-f95a2a0c5d74?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b7b90ec45ee0ef15e90dccee971dfb53&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  font-family: 'Rubik', sans-serif;
+}
+
+body:after {
+  content: '';
+  background: #780662;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+body:before {
+  content: '';
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.wrap {
+  width: 350px;
+  height: 70vh;
+  background: #780662;
+  position: relative;
+  z-index: 3;
+  float: right;
+  margin: 15vh 150px;
+  overflow: hidden;
+}
+
+.wrap img.cover {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: -70px;
+}
+
+.wrap .shots {
+  width: 60px;
+  margin: 3px;
+}
+
+.wrap .content {
+  z-index: 2;
+  position: relative;
+  background: #780662;
+  height: 40vh;
+  margin-top: 18vh;
+  color: #E3F6F5;
+  padding: 20px;
+}
+
+.wrap a {
+  display: block;
+  text-decoration: none;
+  color: #FC00A3;
+}
+
+.wrap h1, .wrap a, .wrap p {
+  margin-bottom: 15px;
+}
+
+.provider_login {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 25vh  auto;
+}
+
+.provider_login li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  background: #B30C7B;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  margin: 5px 0;
+  font-weight: bolder;
+}
